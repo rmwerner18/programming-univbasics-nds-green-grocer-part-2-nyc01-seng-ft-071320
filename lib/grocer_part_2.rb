@@ -13,13 +13,13 @@ def apply_coupons(cart, coupons)
 end
 
 
-#def apply_clearance(cart)
+def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-#end
+end
 
-#def checkout(cart, coupons)
+def checkout(cart, coupons)
   # Consult README for inputs and outputs
   #
   # This method should call
@@ -29,4 +29,4 @@ end
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-#end
+end
