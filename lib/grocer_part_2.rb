@@ -8,6 +8,7 @@ def apply_coupons(cart, coupons)
       if item[:item] == coupon[:item]
         string = "hello"
       end
+      binding.pry
     end
   end
 end
