@@ -3,10 +3,11 @@ require 'pry'
 
 def apply_coupons(cart, coupons)
   new_cart = consolidate_cart(cart)
+  coupon_item = {}
   new_cart.each do |item|
     coupons.each do |coupon|
       if item[:item] == coupon[:item]
-        string = "hello"
+        
       end
       binding.pry
     end
