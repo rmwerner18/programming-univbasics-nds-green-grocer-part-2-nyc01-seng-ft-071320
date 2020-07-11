@@ -7,7 +7,7 @@ def apply_coupons(cart, coupons)
   coupon.each do |element|
     original_item = find_item_by_name_in_collection(element[:item], cart)
     coupon_item = {:item => element[:item], :price => element[:cost] / element[:num], :clearance => original_item[:clearance], :count => element[:num]}
-    coupn_items << coupon item
+    coupn_items << coupon_item
   end
   binding.pry
 end
