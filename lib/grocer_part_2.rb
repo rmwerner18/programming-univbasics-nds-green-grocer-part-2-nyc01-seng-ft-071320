@@ -7,7 +7,7 @@ def apply_coupons(cart, coupons)
   new_cart.each do |item|
     coupons.each do |coupon|
       if item[:item] == coupon[:item]
-        
+
       end
       binding.pry
     end
