@@ -3,7 +3,10 @@ require 'pry'
 
 def apply_coupons(cart, coupons)
   new_cart = consolidate_cart(cart)
-  coupon_item = {}
+  coupon_items = []
+  coupon.each do |element|
+    original_item = find_item_by_name_in_collection(element[:item], cart)
+    coupon_item = {:item => element[:item], :price => element[:cost] / element[:num], :clearance => original_item[:clearance], :count => element[:num]}
   new_cart.each do |item|
     coupons.each do |coupon|
       if item[:item] == coupon[:item]
